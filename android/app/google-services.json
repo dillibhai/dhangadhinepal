@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847738561291",
+    "project_id": "dhangadhinepal-96c8c",
+    "storage_bucket": "dhangadhinepal-96c8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847738561291:android:2ae995ab0307dcb2e8780e",
+        "android_client_info": {
+          "package_name": "com.example.dhangadhinepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847738561291-eckiv5q8qh30e81tli7rvn991h71p3dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjeKEqbMgkZPf5DJUxKVINQdCBpcyYI4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847738561291-eckiv5q8qh30e81tli7rvn991h71p3dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
