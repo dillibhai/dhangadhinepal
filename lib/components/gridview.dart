@@ -16,7 +16,7 @@ class Gridview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 700.0,
+      height: 700,
       child: GridView.count(
         scrollDirection: Axis.vertical,
         crossAxisCount: 2,

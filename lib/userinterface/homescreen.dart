@@ -1,6 +1,7 @@
 import 'package:dhangadhinepal/components/gridview.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:marquee_widget/marquee_widget.dart';
 
 // import 'grildlist.dart';
 
@@ -76,26 +77,45 @@ class _HomeScreenState extends State<HomeScreen> {
                     margin: EdgeInsets.only(top: 20.0, right: 20.0),
                     child: Column(
                       children: [
-                        CircleAvatar(
-                          radius: 35.0,
-                          backgroundImage:
-                              AssetImage("assets/images/nepal.png"),
-                        ),
-                        ElevatedButton(
-                          onPressed: () {
+                        GestureDetector(
+                          onTap: () {
                             FirebaseAuth.instance.signOut();
                           },
-                          child: Icon(
-                            Icons.logout,
+                          child: CircleAvatar(
+                            radius: 35.0,
+                            backgroundImage:
+                                AssetImage("assets/images/nepal.png"),
                           ),
                         ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-            // SizedBox(height: 0.0),
+            Padding(
+              padding: const EdgeInsets.all(1.0),
+              child: Container(
+                height: 45.0,
+                color: Colors.cyan[500],
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Marquee(
+                    child: Text(
+                      'Dhangadhi sub munsipality have emergency resopnse system, if you need emergency services please contact us ',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    textDirection: TextDirection.rtl,
+                    animationDuration: Duration(seconds: 1),
+                    backDuration: Duration(milliseconds: 5000),
+                    pauseDuration: Duration(milliseconds: 2500),
+                  ),
+                ),
+              ),
+            ),
             Gridview(),
           ],
         ),

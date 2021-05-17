@@ -116,16 +116,6 @@ class _DrawerScreenState extends State<DrawerScreen> {
                   ),
                 ),
               ),
-              // GestureDetector(
-              //   onTap: () {
-              //     FirebaseAuth.instance.signOut();
-              //   },
-              //   child: Text(
-              //     'Logout',
-              //     style: TextStyle(
-              //         color: Colors.white, fontWeight: FontWeight.bold),
-              //   ),
-              // )
             ],
           )
         ],
